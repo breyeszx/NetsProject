@@ -1,9 +1,12 @@
 import { UIForm } from "@/components/component/uiform";
-import Form from "@/components/Form";
+import { Hero } from "@/components/component/hero";
+import { Navbar } from "@/components/component/navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-slate-800">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100">
+      <Navbar />
+      <Hero />
       <UIForm />
     </div>
   );
