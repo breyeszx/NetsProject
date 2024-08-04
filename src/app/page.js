@@ -1,13 +1,15 @@
 import { UIForm } from "@/components/component/uiform";
 import { Hero } from "@/components/component/hero";
-import { Navbar } from "@/components/component/navbar";
+import { Banner } from "@/components/component/banner";
+import { Footer } from "@/components/component/footer";
+import { ContactHero } from "@/components/component/contact-hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100">
-      <Navbar />
+    <div>
       <Hero />
-      <UIForm />
+      <Banner />
+      <ContactHero />
     </div>
   );
 }
