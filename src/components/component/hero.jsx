@@ -6,6 +6,7 @@ import {
   CarouselNext,
 } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -55,8 +56,12 @@ export function Hero() {
             </h1>
           </div>
           <div className="flex gap-6 p-4 justify-center">
-            <Button>Contactanos!</Button>
-            <Button variant="outline">Por que nosotros?</Button>
+            <Link href="/contactanos">
+              <Button>Contactanos!</Button>
+            </Link>
+            <Link href="/sobre-nosotros">
+              <Button variant="outline">Por que nosotros?</Button>
+            </Link>
           </div>
           <p className="text-muted-foreground md:text-xl">
             Con nuestras mallas de la mejor calidad del mercado e instaladas a
